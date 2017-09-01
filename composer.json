@@ -6,13 +6,22 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+        "backpack/base": "^0.7.23",
+        "backpack/crud": "^3.2",
+        "backpack/pagemanager": "1.1.10",
         "laravel/framework": "5.4.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "lavary/laravel-menu": "^1.6",
+        "nwidart/laravel-modules": "^1.27",
+        "twbs/bootstrap": "4.0.0-alpha.6",
+        "bestmomo/scafold": "dev-master"
     },
     "require-dev": {
+        "backpack/generators": "^1.1",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.7"
+        "phpunit/phpunit": "~5.7",
+        "laracasts/generators": "dev-master as 1.1.4"
     },
     "autoload": {
         "classmap": [

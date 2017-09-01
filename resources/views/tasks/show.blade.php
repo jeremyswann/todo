@@ -1,4 +1,4 @@
-@extends('app')
+@extends('layout')
 
 @section('content')
 
@@ -12,7 +12,6 @@
             <input class="toggle-all" type="checkbox">
             <ul class="todo-list">
 
-                @foreach($tasks as $task)
                     <li class="todo">
                         <div class="view">
                             <input class="toggle" type="checkbox">
@@ -21,7 +20,6 @@
                         </div>
                         <input class="edit" type="text">
                     </li>
-                @endforeach
 
             </ul>
         </section>

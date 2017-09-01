@@ -11,18 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+//Start again :(
 
-    $name = 'Home Page';
-    $tasks = [
-        'Learn Laravel',
-        'Get better at php',
-        'build web apps'
-    ];
+Route::get('/tasks', 'TasksController@index')->name('task.index');
 
-    return view('welcome', compact('tasks', 'name'));
-});
+Route::get('/tasks/{task}', 'TasksController@show');
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::post('/tasks', 'TasksController@store')->name('task.store');
+
+Route::delete('/tasks', 'TasksController@update')->name('task.update');
